@@ -3,13 +3,14 @@
   hosts: etcd
   roles:
     - role: etcd
-      tags: ["never", "etcd"]
 
 - name: Role for installing postgresql
   hosts: postgresql
   roles:
     - role: postgresql
-      tags: ["never", "postgresql"]
-    
     - role: patroni
-      tags: ["patroni"]
+
+- name: Role for instlling haproxy
+  hosts: haproxy
+  roles:
+    - role: haproxy
