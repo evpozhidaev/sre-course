@@ -2,4 +2,14 @@
 - name: Role for installing etcd
   hosts: etcd
   roles:
-    - etcd
+    - role: etcd
+      tags: ["never", "etcd"]
+
+- name: Role for installing postgresql
+  hosts: postgresql
+  roles:
+    - role: postgresql
+      tags: ["never", "postgresql"]
+    
+    - role: patroni
+      tags: ["patroni"]
