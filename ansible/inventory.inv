@@ -1,5 +1,5 @@
 [haproxy]
-sre-cource-haproxy ansible_host=localhost
+sre-course-haproxy ansible_host=localhost
 
 [postgresql]
 sre-course-pgsql-1 ansible_host=10.0.10.3

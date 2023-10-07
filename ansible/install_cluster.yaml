@@ -1,0 +1,5 @@
+---
+- name: Role for installing etcd
+  hosts: etcd
+  roles:
+    - etcd

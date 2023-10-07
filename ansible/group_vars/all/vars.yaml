@@ -1,0 +1,6 @@
+---
+etcd_release: "3.3.11"
+etcd_token: 'Dexa6K7pSJrJ'
+
+postgres_user: sre-course-pgdb-user
+postgres_user_pass: my_password
