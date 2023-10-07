@@ -1,0 +1,6 @@
+[haproxy]
+sre-cource-haproxy
+
+[postgresql]
+
+[etcd]
